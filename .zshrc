@@ -68,7 +68,7 @@ if [ "$EUID" -eq 0 ]; then
 fi
 PROMPT="[%T](%{$fg[yellow]%}%m%{$reset_color%})%{$fg[$color]%}%n %{$fg[cyan]%}%~ %{%(#~$fg[red]~$fg[cyan])%}%#%{$reset_color%} "
 
-alias ls='ls --color=auto --group-directories-first'
+alias ls='ls -althr --time-style=long-iso --color=auto --group-directories-first'
 alias tail='multitail'
 alias df='df -h'
 alias start='sudo systemctl start'
