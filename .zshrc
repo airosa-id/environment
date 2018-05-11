@@ -76,7 +76,7 @@ alias restart='sudo systemctl restart'
 alias stop='sudo systemctl stop'
 alias status='sudo systemctl status'
 alias reload='sudo systemctl reload'
-alias less='vim -R'
+alias lessv='vim -R'
 
 #Color Grep and add yellow color
 export GREP_COLORS="mt=33"
