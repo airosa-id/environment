@@ -80,7 +80,7 @@ alias lessv='vim -R'
 
 #Color Grep and add yellow color
 export GREP_COLORS="mt=33"
-export GREP_OPTIONS="--color=auto"
+alias grep='grep --color=auto'
 
 # Export java option IPv4 Preference
 export _JAVA_OPTIONS="-Djava.net.preferIPv4Stack=true"

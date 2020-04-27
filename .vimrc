@@ -46,7 +46,7 @@ highlight lCursor guifg=NONE guibg=Cyan
 ":set ff=dos
 
 " словари С ё
-:setlocal spell spelllang=ru_yo,en_us
+":setlocal spell spelllang=ru_yo,en_us
 
 " Язык помощи
 set helplang=ru
