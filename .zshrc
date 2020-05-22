@@ -103,5 +103,5 @@ bindkey "^[[B" history-search-forward
 bindkey '^i' expand-or-complete-prefix
 
 if [ ! "$EUID" -eq 0 ]; then
-    tmux attach -d|| tmux new
+    tmux attach || tmux new
 fi
