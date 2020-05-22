@@ -1,6 +1,9 @@
 set nocompatible
 colorscheme desert
 
+filetype on
+filetype plugin on
+
 " Включение  Юникода
 set encoding=utf-8
 set termencoding=utf-8
