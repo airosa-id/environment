@@ -2,6 +2,8 @@ autoload -U colors select-word-style
 colors	#Colors
 select-word-style bash	#ctrl+w on words
 
+export ASTERISK_PROMPT="[%d %t]%H*> "
+
 export EDITOR="vim"
 
 #Colored man view
@@ -107,7 +109,7 @@ if [ ! "$EUID" -eq 0 ]; then
 	# sessions opened and it will use the same windows. This really
 	# makes TMUX work like SCREEN.
 	if [ -z "$TMUX" ] && [ -z "$DISPLAY" ] && [ -z "$TERM_PROGRAM" ]; then
-		base_session="${USER}_session"
+		base_session="${USER//./}_session"
 		# Create a new session if it doesn't exist
 		tmux has-session -t $base_session || tmux new-session -d -s $base_session
 
